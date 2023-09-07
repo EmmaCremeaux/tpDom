@@ -1,0 +1,34 @@
+Dans cet exercice l'utilisateur est un enseignant qui doit pouvoir noter ses élèves. 
+Il faudra donc un TABLEAU avec :    en colonne 1 le nom des élèves, 
+                                    en colonne 2 le nom du devoir.
+Il doit pouvoir noter PAR NOTE OU PAR COULEUR.
+
+Les notes traditionnelles seront de 1 à tt. 
+Pour les couleurs il doit pouvoir mettre 4 couleurs (ROUGE, ORANGE, JAUNE, VERT).
+
+Il faut donc un BOUTON pour que l'utilisateur nous dise avant de commencer s'il note en couleur ou par note.
+
+Avant son choix, il ne doit pas pouvoir noter, donc les INPUTS SONT CACHÉS. 
+En fonction de son choix, il faudra gérer les évènements pour qu'il puisse mettre une note 
+et que le FOCUS PASSE AUTOMATIQUEMENT SUR LA CASE DU DESSOUS, donc sur l'élève suivant.
+
+S'il note par couleur, les cases devront être en couleur VERTE PAR DEFAULT. 
+Ensuite lorsque l'utilisateur tapera la touche 1 on mettre la couleur rouge, 
+et le focus sur l'élève suivant. On fera de même pour le 2 qui sera la couleur orange 
+et 3 la couleur jaune et 4 la couleur verte. 
+Si l'utilisateur note par couleur, il faut que le CHIFFRE DISPARAISSE avant de passer à la case suivante. 
+On ne doit voir que la couleur sur les cases.
+
+Dans une première version améliorée, il faudra que les valeurs soient enregistrées par
+l'enseignant dans le LOCALSTORAGE. 
+Il faudrait donc un bouton RESET en plus pour remettre à zero les valeurs que ça soit pour les couleurs ou pour les notes.
+
+Dans une deuxième version améliorée, il faudra ajouter PLUSIEURS DEVOIRS dans le tableau. 
+Il faudra un bouton reset sous chaque devoir pour pouvoir remettre à zero le devoir que l'on souhaite. 
+Il faudra aussi un bouton de reset général pour tous les devoirs.
+
+
+tableau = table/tr/td en html
+pour les note de 1 a 5 = utilisé regex
+le focus qui passe en dessous = parcourir les noeuds et utiliser nextsibling
+enregistrement localstorage avec le meme bouton que le choix couleurs/note
