@@ -109,12 +109,12 @@ buttonChoice.addEventListener("click", () => {
 
 
 // bouton qui vide les inputs et le localStorage
-buttonReset.addEventListener("click", () => {
-    const inputs = document.querySelectorAll('input');
-    inputs.forEach(input => {
-        input.value='';
-        input.removeAttribute("style")
-        localStorage.clear();
-    });
-})
+// buttonReset.addEventListener("click", () => {
+//     const inputs = document.querySelectorAll('input');
+//     inputs.forEach(input => {
+//         input.value='';
+//         input.removeAttribute("style")
+//         localStorage.clear();
+//     });
+// })
 
